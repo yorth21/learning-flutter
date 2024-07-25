@@ -1,3 +1,5 @@
+import 'package:curso/screens/home_screen.dart';
+// my widgets
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -7,19 +9,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Feed Cards',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Feed Cards'),
-          backgroundColor: Colors.blue,
-        ),
-        body: const Center(
-          child: Text('Hola mundo!'),
-        ),
-        backgroundColor: Colors.grey[200],
-      ),
+      home: HomeScreen(),
     );
   }
 }
